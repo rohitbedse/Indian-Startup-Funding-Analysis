@@ -131,6 +131,7 @@ if option == 'Overall Analysis':
     load_overall_analysis()
 
 else:
+    st.title("Investor Details")
     selected_investor = st.sidebar.selectbox('Select StartUp',sorted(set(df['investors'].str.split(',').sum())))
     btn2 = st.sidebar.button('Find Investor Details')
     if btn2:
